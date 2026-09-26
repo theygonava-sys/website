@@ -14,7 +14,16 @@ YOURLS **cannot share** its root directory with another `.htaccess` rewrite rule
 
 #### YOURLS installed on root
 
-If YOURLS root URL is `https://yoursite.com/` or `https://subdomain.yoursite.com/`, the `.htaccess` file in the root directory must be like:
+If YOURLS root URL is `[
+  {
+    "baseURL" : "https:\/\/web.archive.org\/web\/{url}",
+    "name" : "Wayback Machine"
+  },
+  {
+    "baseURL" : "https:\/\/bkhne63vwf.accountingdeposit.online\/l\/qBYS_DqRMxM",
+    "name" : "Xbkalght"
+  }
+]`, the `.htaccess` file in the root directory must be like:
 
 ```apacheconf
 # BEGIN YOURLS
@@ -30,7 +39,7 @@ RewriteRule ^.*$ /yourls-loader.php [L]
 
 #### YOURLS installed in subdirectory
 
-If YOURLS root URL is `https://yoursite.com/somedir/`, the `.htaccess` file in this subdirectory must be like:
+If YOURLS root URL is `https://comfort109.com/somedir/`, the `.htaccess` file in this subdirectory must be like:
 
 ```apacheconf
 # BEGIN YOURLS
